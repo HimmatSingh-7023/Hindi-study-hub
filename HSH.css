@@ -1,22 +1,99 @@
-h1 {
-
-    background-color: ;
-    color: rgb(219, 81, 189);
-    text-align: left;
-    padding: 2px;
-    font-size: 25px;
-    border-bottom: 3px solid rgb(51, 255, 0);
-    display: inline-block;
-    border-bottom: 3px solid rgb(51,255,0);
-    padding-bottom: 5px;
-    margin-left:25px;
+body{
+    margin:0;
+    font-family: Arial, sans-serif;
 }
-    
-    
-    /*letter-spacing: 2px;(Word ke bich me space dena )
 
-}*/
-{
-
+/* HEADER */
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:#111;
+    padding:15px;
+    color:white;
 }
-    
+
+.logo{
+    font-size:22px;
+    font-weight:bold;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    margin:0;
+}
+
+nav ul li{
+    margin-left:20px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+}
+
+nav ul li a:hover{
+    color:yellow;
+}
+
+/* SEARCH */
+.search-box{
+    display:flex;
+}
+
+.search-box input{
+    padding:6px;
+    border:none;
+}
+
+.search-box button{
+    padding:6px 10px;
+    border:none;
+    background:yellow;
+    cursor:pointer;
+}
+
+/* HERO */
+.hero{
+    text-align:center;
+    padding:60px 20px;
+    background:#f4f4f4;
+}
+
+.hero h1{
+    font-size:32px;
+}
+
+/* SECTIONS */
+.section{
+    padding:40px 20px;
+    text-align:center;
+}
+
+.card-container{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+.card{
+    background:#eee;
+    padding:20px;
+    margin:10px;
+    width:200px;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+.card:hover{
+    background:#ddd;
+}
+
+/* FOOTER */
+footer{
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:15px;
+}
